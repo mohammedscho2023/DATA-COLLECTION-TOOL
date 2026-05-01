@@ -158,12 +158,14 @@
   }
 
   // ------------------------------------------------------------
-  // 2. SYNC ENGINE (push + pull) – REPLACE URLs WITH YOUR BACKEND
-  // ------------------------------------------------------------
-  // ⚠️ CHANGE THESE URLs to your real backend
-  const API_BASE = 'https://your-backend.example.com/api';
-  const PUSH_URL = `${API_BASE}/records`;
-  const PULL_URL = `${API_BASE}/records?since=`;
+  // 2. const firebaseConfig = {
+  apiKey: "AIzaSyD... (your actual key)",
+  authDomain: "mydatacollector.firebaseapp.com",
+  projectId: "mydatacollector",
+  storageBucket: "mydatacollector.appspot.com",
+  messagingSenderId: "123456789012",
+  appId: "1:123456789012:web:abc123def456"
+};
 
   let lastSyncTime = parseInt(localStorage.getItem('lastSyncTime') || '0');
 
